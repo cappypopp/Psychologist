@@ -90,15 +90,35 @@
                                     <segue destination="ioA-Jr-67B" kind="showDetail" identifier="showSadDiagnosis" id="AEj-zD-dou"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJC-8b-lLG">
+                                <rect key="frame" x="255" y="427" width="83" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="8Ud-XY-bFL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Nothing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Ud-XY-bFL"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="nothing:" destination="DCy-bT-v8q" eventType="touchUpInside" id="fSp-mz-ecc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="DtT-wr-UlX" secondAttribute="centerX" id="56s-zt-1jN"/>
                             <constraint firstItem="ciN-UF-KUO" firstAttribute="leading" secondItem="xts-uv-W69" secondAttribute="leadingMargin" id="CqJ-KO-lt7"/>
+                            <constraint firstItem="IJC-8b-lLG" firstAttribute="top" secondItem="CMD-Oi-1Il" secondAttribute="bottom" constant="8" symbolic="YES" id="EJs-bW-YuK"/>
                             <constraint firstItem="DtT-wr-UlX" firstAttribute="centerX" secondItem="ciN-UF-KUO" secondAttribute="centerX" id="ERa-jQ-Evi"/>
                             <constraint firstItem="bQd-zt-Iwl" firstAttribute="top" secondItem="ciN-UF-KUO" secondAttribute="bottom" constant="474" id="Jqr-3c-BwN"/>
                             <constraint firstItem="xMi-mj-S1D" firstAttribute="centerX" secondItem="DtT-wr-UlX" secondAttribute="centerX" id="SRT-B2-tCB"/>
                             <constraint firstItem="ciN-UF-KUO" firstAttribute="trailing" secondItem="xts-uv-W69" secondAttribute="trailingMargin" id="fuM-jB-1iI"/>
+                            <constraint firstItem="IJC-8b-lLG" firstAttribute="leading" secondItem="CMD-Oi-1Il" secondAttribute="leading" id="jZC-Rd-Lt8"/>
                             <constraint firstItem="xMi-mj-S1D" firstAttribute="top" secondItem="DtT-wr-UlX" secondAttribute="bottom" constant="8" symbolic="YES" id="pwl-Ih-OMa"/>
                             <constraint firstItem="CMD-Oi-1Il" firstAttribute="centerX" secondItem="xMi-mj-S1D" secondAttribute="centerX" id="rix-9t-Kqx"/>
                             <constraint firstItem="CMD-Oi-1Il" firstAttribute="top" secondItem="xMi-mj-S1D" secondAttribute="bottom" constant="8" symbolic="YES" id="sm9-kJ-bwi"/>
@@ -115,6 +135,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Psychologist" id="YXC-dW-VIb"/>
+                    <connections>
+                        <segue destination="ioA-Jr-67B" kind="showDetail" identifier="showNothingDiagnosis" id="oQa-YW-Pjk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kn9-4G-GDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,6 +229,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="V24-LA-Gwu"/>
+        <segue reference="oQa-YW-Pjk"/>
     </inferredMetricsTieBreakers>
 </document>
