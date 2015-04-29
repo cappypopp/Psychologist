@@ -37,6 +37,7 @@ class HappinessViewController: UIViewController, HappinessViewDataSource {
     
     private func updateUI() {
         happinessView?.setNeedsDisplay()
+        title = "\(happiness)"
     }
     
     @IBAction func changeHappiness(sender: UIPanGestureRecognizer) {

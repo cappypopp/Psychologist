@@ -11,7 +11,7 @@
                 <splitViewController id="Bt6-Ut-HEK" sceneMemberID="viewController">
                     <connections>
                         <segue destination="2vK-ab-f3J" kind="relationship" relationship="masterViewController" id="imE-hZ-rBV"/>
-                        <segue destination="qKo-Xf-0wK" kind="relationship" relationship="detailViewController" id="Ad7-gA-blJ"/>
+                        <segue destination="ioA-Jr-67B" kind="relationship" relationship="detailViewController" id="Ad7-gA-blJ"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0VA-1a-N0X" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -51,7 +51,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="qKo-Xf-0wK" kind="showDetail" identifier="showHappyDiagnosis" id="R9C-lh-1Sg"/>
+                                    <segue destination="ioA-Jr-67B" kind="showDetail" identifier="showHappyDiagnosis" id="R9C-lh-1Sg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMD-Oi-1Il">
@@ -69,7 +69,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="qKo-Xf-0wK" kind="showDetail" identifier="showMehDiagnosis" id="V24-LA-Gwu"/>
+                                    <segue destination="ioA-Jr-67B" kind="showDetail" identifier="showMehDiagnosis" id="V24-LA-Gwu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMi-mj-S1D">
@@ -87,7 +87,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="qKo-Xf-0wK" kind="showDetail" identifier="showSadDiagnosis" id="AEj-zD-dou"/>
+                                    <segue destination="ioA-Jr-67B" kind="showDetail" identifier="showSadDiagnosis" id="AEj-zD-dou"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -172,6 +172,7 @@
                             <constraint firstItem="ibL-HR-5Eq" firstAttribute="bottom" secondItem="iRn-HD-DfY" secondAttribute="top" id="wO5-MM-RDr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="MAZ-ky-5tJ"/>
                     <connections>
                         <outlet property="happinessView" destination="ibL-HR-5Eq" id="Q15-mJ-N99"/>
                     </connections>
@@ -182,6 +183,24 @@
                         <action selector="changeHappiness:" destination="qKo-Xf-0wK" id="rNR-f3-x8V"/>
                     </connections>
                 </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2596" y="83"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="A2E-hF-4BZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ioA-Jr-67B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="31z-z4-U9I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qKo-Xf-0wK" kind="relationship" relationship="rootViewController" id="Qi3-4D-yXs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktT-kW-eio" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1784" y="83"/>
         </scene>
