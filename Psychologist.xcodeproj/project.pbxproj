@@ -10,6 +10,7 @@
 		3832FB7C1AF132EC00B42EEE /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832FB7A1AF132EC00B42EEE /* HappinessViewController.swift */; };
 		3832FB7D1AF132EC00B42EEE /* HappinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832FB7B1AF132EC00B42EEE /* HappinessView.swift */; };
 		3832FB7F1AF1484000B42EEE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832FB7E1AF1484000B42EEE /* HistoryViewController.swift */; };
+		3832FB811AF14B9B00B42EEE /* DiagnosedHappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3832FB801AF14B9B00B42EEE /* DiagnosedHappinessViewController.swift */; };
 		389EE6711AD9794C0050E337 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389EE6701AD9794C0050E337 /* AppDelegate.swift */; };
 		389EE6731AD9794C0050E337 /* PsychologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389EE6721AD9794C0050E337 /* PsychologistViewController.swift */; };
 		389EE6761AD9794C0050E337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389EE6741AD9794C0050E337 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		3832FB7A1AF132EC00B42EEE /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 		3832FB7B1AF132EC00B42EEE /* HappinessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessView.swift; sourceTree = "<group>"; };
 		3832FB7E1AF1484000B42EEE /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		3832FB801AF14B9B00B42EEE /* DiagnosedHappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagnosedHappinessViewController.swift; sourceTree = "<group>"; };
 		389EE66B1AD9794C0050E337 /* Psychologist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Psychologist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		389EE66F1AD9794C0050E337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		389EE6701AD9794C0050E337 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				3832FB7B1AF132EC00B42EEE /* HappinessView.swift */,
 				389EE6741AD9794C0050E337 /* Main.storyboard */,
 				389EE66E1AD9794C0050E337 /* Supporting Files */,
+				3832FB801AF14B9B00B42EEE /* DiagnosedHappinessViewController.swift */,
 			);
 			path = Psychologist;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				3832FB7D1AF132EC00B42EEE /* HappinessView.swift in Sources */,
 				389EE6731AD9794C0050E337 /* PsychologistViewController.swift in Sources */,
 				3832FB7C1AF132EC00B42EEE /* HappinessViewController.swift in Sources */,
+				3832FB811AF14B9B00B42EEE /* DiagnosedHappinessViewController.swift in Sources */,
 				3832FB7F1AF1484000B42EEE /* HistoryViewController.swift in Sources */,
 				389EE6711AD9794C0050E337 /* AppDelegate.swift in Sources */,
 			);
