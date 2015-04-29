@@ -161,6 +161,41 @@
             </objects>
             <point key="canvasLocation" x="1232" y="-652"/>
         </scene>
+        <!--History View Controller-->
+        <scene sceneID="oo4-xQ-RUZ">
+            <objects>
+                <viewController id="WbR-t2-cbM" customClass="HistoryViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v4z-Jt-yWX"/>
+                        <viewControllerLayoutGuide type="bottom" id="zaL-Ry-Avc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gfa-0l-Xha">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="blah" translatesAutoresizingMaskIntoConstraints="NO" id="jdo-kc-ZxP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jdo-kc-ZxP" firstAttribute="top" secondItem="Gfa-0l-Xha" secondAttribute="top" id="DuF-rC-WvC"/>
+                            <constraint firstItem="jdo-kc-ZxP" firstAttribute="leading" secondItem="Gfa-0l-Xha" secondAttribute="leading" id="FXp-UU-P7N"/>
+                            <constraint firstAttribute="trailing" secondItem="jdo-kc-ZxP" secondAttribute="trailing" id="WR8-M8-u0E"/>
+                            <constraint firstItem="jdo-kc-ZxP" firstAttribute="bottom" secondItem="zaL-Ry-Avc" secondAttribute="top" id="m3K-rw-mbu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="history" destination="jdo-kc-ZxP" id="1uR-Lv-zv3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kds-sZ-SKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3302" y="83"/>
+        </scene>
         <!--Happiness View Controller-->
         <scene sceneID="fu2-Fx-nGe">
             <objects>
@@ -195,7 +230,15 @@
                             <constraint firstItem="ibL-HR-5Eq" firstAttribute="bottom" secondItem="iRn-HD-DfY" secondAttribute="top" id="wO5-MM-RDr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MAZ-ky-5tJ"/>
+                    <navigationItem key="navigationItem" id="MAZ-ky-5tJ">
+                        <barButtonItem key="rightBarButtonItem" title="History" id="UA0-cg-oZl">
+                            <connections>
+                                <segue destination="WbR-t2-cbM" kind="popoverPresentation" identifier="showDiagnosticHistory" popoverAnchorBarButtonItem="UA0-cg-oZl" id="T7v-lC-02b">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="happinessView" destination="ibL-HR-5Eq" id="Q15-mJ-N99"/>
                     </connections>
